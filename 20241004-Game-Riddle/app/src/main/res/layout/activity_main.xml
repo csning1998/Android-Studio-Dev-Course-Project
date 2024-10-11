@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 標題：居中對齊 -->
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="猜字謎遊戲"
+        android:textSize="48sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Candidate"
+        android:layout_marginTop="36dp" />
+
+    <!-- 參賽者名稱：調整位置 -->
+
+    <!-- 圖片：居中顯示 -->
+
+    <TextView
+        android:id="@+id/Candidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="410570554 寗靜山"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameTitle" />
+
+    <!-- 謎題：居中對齊 -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="224dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Candidate"
+        tools:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/riddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="謎題："
+        android:textSize="32sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- 輸入答案 -->
+
+    <TextView
+        android:id="@+id/yourAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="你的答案："
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riddle" />
+
+    <EditText
+        android:id="@+id/ed_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="text"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@+id/yourAnswer"
+        app:layout_constraintStart_toEndOf="@+id/yourAnswer"
+        app:layout_constraintBottom_toBottomOf="@+id/yourAnswer"
+        android:layout_marginStart="8dp" />
+
+    <!-- 結果標籤 -->
+<!--    <TextView-->
+<!--        android:id="@+id/ed_answer"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="謎底"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/yourAnswer" />-->
+
+    <!-- 按鈕區域 -->
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="結果"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_answer" />
+
+    <Button
+        android:id="@+id/btn_riddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="出題"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Result" />
+
+    <Button
+        android:id="@+id/btn_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="答題"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/btn_riddle"
+        app:layout_constraintStart_toEndOf="@+id/btn_riddle"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/btn_reAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重答"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/btn_answer"
+        app:layout_constraintStart_toEndOf="@+id/btn_answer"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/btn_showAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看謎底"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/btn_reAnswer"
+        app:layout_constraintStart_toEndOf="@+id/btn_reAnswer"
+        android:layout_marginStart="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
