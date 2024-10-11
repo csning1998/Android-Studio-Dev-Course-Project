@@ -17,7 +17,7 @@ This repository contains an Android Studio project intended for educational purp
 This section provides instructions to set up the Android Studio project on Windows, macOS, and Linux (Ubuntu). Follow the steps according to your operating system.
 
 ### Prerequisites
-- **Java Development Kit (JDK)**: Version 11 or later
+- **Java Development Kit (JDK)**: Version 17 or later
 - **Android Studio**: Latest stable version
 - **Git**: For cloning the repository
 
@@ -25,7 +25,7 @@ This section provides instructions to set up the Android Studio project on Windo
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/csning1998/Course-Android-Studio-Practice.git
+   git clone https://github.com/csning1998/Android-Studio-Dev-Course-Project.git
    cd Course-Android-Studio-Practice
    ``` 
    
@@ -78,7 +78,7 @@ The following setup process is written for those who haven't set up the developm
 1. **Install JDK**: Use the following commands to install OpenJDK:
    ```bash
    sudo apt update
-   sudo apt install openjdk-11-jdk
+   sudo apt install openjdk-17-jdk
    ```
    Verify the installation:
    ```bash
