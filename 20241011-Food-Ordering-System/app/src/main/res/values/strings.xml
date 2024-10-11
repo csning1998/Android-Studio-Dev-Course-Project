@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Example6_2UserDefineContract</string>
+    <string name="app_name">Food Ordering System</string>
     <string name="menu">主餐選單</string>
     <string name="meal_a">A餐</string>
     <string name="meal_b">B餐</string>

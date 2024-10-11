@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.gu.example6_2userdefinecontract"
+        applicationId "com.csning.FoodOrderingSystem"
         minSdk 28
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -29,6 +29,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.csning.FoodOrderingSystem'
 }
 
 dependencies {
