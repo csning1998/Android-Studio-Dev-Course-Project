@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:id="@+id/tv_drinkMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/drinkMenu"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="#009688" />
+
+    <TextView
+        android:id="@+id/tv_table4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/tvTxt4"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_drinkMenu" />
+
+    <EditText
+        android:id="@+id/ed_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/edDrink"
+
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#DD2C00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_table4"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/tv_table3"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/tvTable3"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_table4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_drinkMenu" />
+
+    <TextView
+        android:id="@+id/tv_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/tvSugar"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_drink" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="328dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sugar">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/noSugar"
+            android:textColor="#00838F"
+            tools:ignore="TextContrastCheck"
+            tools:textColor="#223FFF" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lessSugar"
+            tools:textColor="#4400FF" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/halfSugar"
+            android:textColor="#F44336" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:text="@string/normalSugar"
+            android:textColor="#E91E63" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_ice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/iceTxt"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="334dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ice">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/noIce" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/minuteIce" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lessIce" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/normal_ice" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_drinkConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/drinkConfirm"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

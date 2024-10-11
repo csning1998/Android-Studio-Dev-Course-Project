@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Example6_2UserDefineContract</string>
+    <string name="menu">主餐選單</string>
+    <string name="meal_a">A餐</string>
+    <string name="meal_b">B餐</string>
+    <string name="meal_c">C餐</string>
+    <string name="meal_d">D餐</string>
+    <string name="order_confirm">確認送出</string>
+    <string name="noMsg">無</string>
+    <string name="appName">點餐系統</string>
+    <string name="btn_meal">主餐</string>
+    <string name="btn_drink">飲料</string>
+    <string name="mainMeal">主餐：無\n</string>
+    <string name="orderMsg">～～您的餐點如下～～</string>
+    <string name="tableMsg">請輸入桌號</string>
+    <string name="tvTxt1">桌號：</string>
+    <string name="edTable">請輸入桌號</string>
+    <string name="tvTxt2">桌號：</string>
+    <string name="noMsg2">無</string>
+    <string name="drinkStatus">飲料：無\n\n甜度：無\n\n冰塊：無</string>
+    <string name="drinkMenu">飲料選單</string>
+    <string name="edDrink">.........請輸入飲料名稱...........</string>
+    <string name="tvTable3">無</string>
+    <string name="tvSugar">甜度：</string>
+    <string name="iceTxt">冰塊：</string>
+    <string name="noSugar">無糖</string>
+    <string name="lessSugar">少糖</string>
+    <string name="halfSugar">半糖</string>
+    <string name="normalSugar">全糖</string>
+    <string name="noIce">去冰</string>
+    <string name="minuteIce">微冰</string>
+    <string name="lessIce">少冰</string>
+    <string name="normal_ice">正常</string>
+    <string name="drinkConfirm">確認送出</string>
+    <string name="tvTxt4">桌號：</string>
+</resources>
