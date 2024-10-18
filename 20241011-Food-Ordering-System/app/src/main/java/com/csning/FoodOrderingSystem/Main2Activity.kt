@@ -22,7 +22,6 @@ class Main2Activity : AppCompatActivity() {
 
         //點餐
         btnMealConfirm.setOnClickListener {
-            //將主餐名稱放入Bundle
             lateinit var mealA: CheckBox
             lateinit var mealB: CheckBox
             lateinit var mealC: CheckBox
@@ -35,7 +34,11 @@ class Main2Activity : AppCompatActivity() {
             var meal2 = if (mealB.isChecked) "B餐" else ""
             var meal3 = if (mealC.isChecked) "C餐" else ""
             var meal4 = if (mealD.isChecked) "D餐" else ""
-            val meal = "$meal1 $meal2 $meal3 $meal4"
+            val meal = if (meal1.isEmpty() && meal2.isEmpty() && meal3.isEmpty() && meal4.isEmpty()) {
+                "無"
+            } else {
+                "$meal1 $meal2 $meal3 $meal4"
+            }
 
             val intent = Intent().apply {
                 putExtra("result", "$meal")
@@ -47,6 +50,5 @@ class Main2Activity : AppCompatActivity() {
             //結束Main2Activity
             finish()
         }
-
     }
 }
