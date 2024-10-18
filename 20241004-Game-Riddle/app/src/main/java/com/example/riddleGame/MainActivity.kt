@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 綁定變數與畫面元件
         val tvRiddle = findViewById<TextView>(R.id.riddle)
         val edAnswer = findViewById<EditText>(R.id.ed_answer)
         val btnRiddle = findViewById<Button>(R.id.btn_riddle)
@@ -22,8 +21,7 @@ class MainActivity : AppCompatActivity() {
         val btnShowAnswer = findViewById<Button>(R.id.btn_showAnswer)
         val tvResult = findViewById<TextView>(R.id.Result)
 
-        // 用 list 儲存謎題及答案
-        var index = 0 // 初始化出題指標
+        var index = 0
         val riddleList = mutableListOf(
             "0000，猜一句成語。:AAA",
             "人有他大，天沒他大。:BBB",
@@ -32,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             "0+0=1，猜一成語。:EEE。"
         )
 
-        // 按出題鍵
         edAnswer.text = null
         tvResult.text = null
 
@@ -43,7 +40,6 @@ class MainActivity : AppCompatActivity() {
             index++
             if (index >= countRiddle) index = 0
 
-            // 按答題鍵
             btnAnswer.setOnClickListener {
                 val ans = edAnswer.text
                 if (ans.toString() == answer) {
@@ -55,13 +51,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            // 按重答鍵
             btnReAnswer.setOnClickListener {
                 edAnswer.text = null
                 tvResult.text = null
             }
 
-            // 按顯示答案鍵
             btnShowAnswer.setOnClickListener {
                 tvResult.text = "謎底是：$answer"
             }
